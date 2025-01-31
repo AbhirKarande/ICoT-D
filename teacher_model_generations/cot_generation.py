@@ -130,6 +130,11 @@ def generate_responses(dataset, model):
         })
     
     return results
+from datasets import load_dataset
+
+gsm8k_dataset = load_dataset("openai/gsm8k", "main")
+arc_agi_dataset = load_dataset("dataartist/arc-agi")
+humaneval_dataset = load_dataset("openai/openai_humaneval")
 
 # Generate responses with token importance analysis
 gsm8k_results = generate_responses_with_importance(gsm8k_dataset, your_model)
