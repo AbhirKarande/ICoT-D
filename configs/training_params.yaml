@@ -1,0 +1,10 @@
+# configs/training_params.yaml
+training:
+  total_steps: 10000
+  learning_rate: 3e-5
+  batch_size: 16
+  lora_rank: 64
+  adapter_weights:
+    math: 0.6
+    code: 0.3
+    general: 0.1
